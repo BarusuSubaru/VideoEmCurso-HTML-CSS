@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir essa imagem em vários dispositivos diferentes ou simplesmente aumente o e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png"> <!--Carrega imagem pequena, tem que colocar na ordem maior para menor--> 
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png"> <!--Carrega imagem média-->
+        <img src="imagens/fotog.png" alt="Foto grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+
+    <audio src="media/Sia - Unstoppable (Lyrics).mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+
+    <br>
+
+    <audio preload="metadata" controls loop>
+        <source src="media/Sia - Unstoppable (Lyrics).mp3" type="audio/mpeg">
+        <source src="media/Sia - Unstoppable (Lyrics).ogg" type="audio/ogg">
+        <source src="media/Sia - Unstoppable (Lyrics).wav" type="audio/wav"> <!--Evitar arquivos WAV-->
+        <p>Infelismente seu navegador não consegue reproduzir aúdio. <a href="media/Sia - Unstoppable (Lyrics).mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+</body>
+</html>
