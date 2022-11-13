@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        tbody tr:nth-child(odd) {
+            /*Ou 2n (Múltiplo de 2)*/
+            background-color: lightgray;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table thead {
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH  
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidadades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+        Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+        placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+        quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+        praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+        dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+        dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+        Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+        placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+        quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+        praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+        dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+        dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+        Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+        placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+        quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+        praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+        dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+        dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+        Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+        placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+        quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+        praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+        dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+        dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+            Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+            placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+            quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+            praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+            dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+            dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore ratione incidunt explicabo excepturi cum?
+                Odit dolor commodi fugit dolorem aperiam doloribus blanditiis porro magni tempora quaerat. Ea adipisci optio
+                placeat. Ipsum consequuntur vero ad magni mollitia, tempora eveniet praesentium quod quidem, aliquam impedit cum
+                quae minima id magnam ab, sit voluptate. Impedit, vero nihil at ab aspernatur similique quibusdam. Similique
+                praesentium modi nemo corrupti tempore. At distinctio vel sint beatae. Porro eos ullam minima facere sunt veniam
+                dicta suscipit, unde recusandae deserunt ut, quo repudiandae laboriosam dolorem! Magni nisi ipsam voluptatibus
+                dolorem eius aliquid amet incidunt voluptates suscipit dignissimos!</p>
+
+</body>
+
+</html>
